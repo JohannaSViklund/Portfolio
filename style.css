@@ -1,12 +1,11 @@
 * {
-    
-    font-family: 'Montserrat', sans-serif;
-    margin: 0;
-    box-sizing: border-box;
-  }
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  box-sizing: border-box;
+}
 
-body{
-    margin: 0;
+body {
+  margin: 0;
 }
 
 a:hover,
@@ -16,92 +15,97 @@ a:link {
   color: black;
 }
 
-.navBar{
-    padding: 40px;
-    text-align: right;
-    flex: 1;
-  padding: 20px 20px 20px 470px;
+.navBar {
+  padding: 40px;
+  text-align: right;
+  flex: 1;
+  padding: 20px 15px 20px 470px;
+}
+.navBar a:hover{
+  color: rgb(53, 117, 107);
 }
 
-.nav1{
-    text-align: center;
-    box-sizing: border-box;
-    padding: 20px 60px 20px 20px;
+.nav1 {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px 60px 20px 20px;
 }
-.nav2{
-    text-align: center;
-    box-sizing: border-box;
-    padding: 20px 70px 20px 20px;
+.nav2 {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px 70px 20px 20px;
 }
-.nav3{
-    text-align: center;
-    box-sizing: border-box;
-    padding: 20px 100px 20px 20px;
+.nav3 {
+  text-align: center;
+  box-sizing: border-box;
+  padding: 20px 100px 20px 20px;
 }
-.portfolio{
-    flex: 1;
-    padding: 20px 100px 20px 210px;
-    font-weight: bolder;
-}
-
-.content1{
-background: url("img/desk.png");
-text-align: auto;
-padding: 200px 80px 50px 50px;
+.nav4 {
+  flex: 1;
+  padding: 20px 100px 20px 210px;
+  font-weight: bolder;
 }
 
-.cont1{
-    color: rgb(255, 254, 250);
-    font-weight: bolder;
-    font-size: 30px;
+
+
+
+.content1 {
+  background: url("img/desk.png");
+  text-align: auto;
+  padding: 200px 80px 50px 50px;
+}
+.cont1 {
+  color: rgb(255, 254, 250);
+  font-weight: bolder;
+  font-size: 30px;
 }
 
-.content2{
-    background-color: #c1ddd2;
-    color: black; 
-    text-align: center;
-    padding: 20px;
+.content2 {
+  background-color: #c1ddd2;
+  color: black;
+  text-align: center;
+  padding: 20px;
 }
-.cont2{
-    color: black;
-    font-weight: bolder;
-    font-size: 20px; 
+.cont2 {
+  color: black;
+  font-weight: bolder;
+  font-size: 20px;
 }
-.content3{
+
+
+.myWork {
+  padding: 2px;
+  text-align: center;
+}
+.myWork a:hover {
+  zoom: 1.1;
+}
+
+
+.competence {
+  text-align: center;
+  padding-bottom: 10px;
+}
+.comp1 {
+  padding: 20px;
+}
+.comp2 {
+  padding: 20px;
+}
+.comp3 {
+  padding: 20px;
+}
+.comp4 {
+  padding: 20px;
+}
+.competence2 {
   padding-left: 135px;
   text-align: left;
   font-weight: bold;
 }
 
-.myWork{
-  padding: 2px;
-  text-align: center;
-}
 
-.competence{
-  text-align: center;
-  padding-bottom: 10px;
-}
-
-.comp1{
-  padding: 20px;
-}
-.comp2{
-  padding: 20px;
-}
-.comp3{
-  padding: 20px;
-}
-.comp4{
-  padding: 20px;
-}
-
-.void{
-    background-color: white;
-    padding: 20px;
-}
-
-.contentAboutme{
+.contentAboutme {
   display: flex;
   padding: 10px;
   margin: 20px;
@@ -109,50 +113,50 @@ padding: 200px 80px 50px 50px;
   margin-right: 300px;
   text-align: left;
 }
-.contentAboutme1{
+.contentAboutme1 {
+  display: flex;
   margin-right: 30px;
   font-size: 20px;
-  font-weight: bolder;
-  padding: 20px;
+
   line-height: 1.4;
+}
+.chaslink a:hover{
+  color: rgb(53, 117, 107);
 }
 
 
-
-
-
-.myFooter {
-    color: black;
-    background-color: #c1ddd2;
-    font-size: 110%;
-    float: right;
-  }
-  .letsConnect {
-    text-align: center;
-    font-size: x-large;
-    font-weight: bold;
-  }
-  .socialMedia {
-    text-align: center;
-    font-size: 40px;
-  }
-  .box {
-    color: black;
-    background-color: #c1ddd2;
-    padding: 30px;
-    width: 715px;
-    height: 80px;
-    float: left;
-    text-align: left;
-    font-size: 110%;
-  }
-  .box2 {
-    color: black;
-    background-color: #c1ddd2;
-    padding: 30px;
-    width: 710px;
-    height: 80px;
-    float: right;
-    text-align: right;
-    font-size: 110%;
-  }
+.myFooter{
+  color: black;
+  background-color: #c1ddd2;
+  font-size: 110%;
+  float: right;
+}
+.letsConnect {
+  text-align: center;
+  font-size: x-large;
+  font-weight: bold;
+}
+.socialMedia {
+  text-align: center;
+  font-size: 40px;
+}
+.box {
+  color: black;
+  background-color: #c1ddd2;
+  padding: 30px;
+  width: 715px;
+  height: 80px;
+  float: left;
+  text-align: left;
+  font-size: 110%;
+}
+.box2 {
+  color: black;
+  background-color: #c1ddd2;
+  padding: 30px;
+  width: 710px;
+  height: 80px;
+  float: right;
+  text-align: right;
+  font-size: 110%;
+}
