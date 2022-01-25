@@ -22,10 +22,7 @@ a:link {
   word-spacing: 80px;
   font-size: 20px;
 }
-.navbar a {
-  text-decoration: none;
-  text-align: center;
-}
+
 .navBar a:hover {
   color: rgb(53, 117, 107);
 }
@@ -45,12 +42,12 @@ a:link {
   background-color: #c1ddd2;
   color: black;
   text-align: center;
-  padding: 20px;
 }
 .cont2 {
   color: black;
   font-weight: bolder;
   font-size: 20px;
+  padding: 20px;
 }
 
 .myWork {
@@ -72,7 +69,7 @@ a:link {
   background-color: white;
   text-align: center;
 }
-.compPic{
+.compPic {
   width: 300px;
   height: 250px;
   padding: 20px;
@@ -80,7 +77,6 @@ a:link {
 .contentAboutme {
   display: flex;
   padding: 10px;
-  margin: 20px;
   margin-left: 300px;
   margin-right: 300px;
   text-align: left;
@@ -89,7 +85,6 @@ a:link {
   display: flex;
   margin-right: 30px;
   font-size: 20px;
-
   line-height: 1.4;
 }
 .chaslink a:hover {
@@ -127,18 +122,14 @@ a:link {
   text-align: center;
 }
 
-@media (max-width: 992x) {
-  .box {
-    flex: 50%;
-  }
-}
-
-@media (max-width: 600px) {
+@media (max-width: 1233px) {
   .competence {
     flex-direction: column;
   }
   .contentAboutme {
     flex-direction: column;
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .contentAboutme1 {
     flex-direction: column;
@@ -148,7 +139,32 @@ a:link {
   }
 
   img {
-    width: 100%;
+    width: 50%;
     height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .footer1 {
+    float: left;
+    text-align: center;
+  }
+  .footer2 {
+    float: right;
+    text-align: center;
+  }
+  .myFooter {
+    padding-bottom: 60px;
+  }
+  .profilepic {
+    padding-top: 10px;
+  }
+  .navBar {
+    text-align: center;
+    padding: 20px;
+    padding-right: 20px;
+    word-spacing: 1000px;
+    font-size: 20px;
+    line-height: 1.8;
   }
 }
