@@ -16,38 +16,19 @@ a:link {
 }
 
 .navBar {
-  padding: 40px;
-  text-align: right;
-  flex: 1;
-  padding: 20px 15px 20px 470px;
+  text-align: center;
+  padding: 20px;
+  padding-right: 20px;
+  word-spacing: 80px;
+  font-size: 20px;
 }
-.navBar a:hover{
+.navbar a {
+  text-decoration: none;
+  text-align: center;
+}
+.navBar a:hover {
   color: rgb(53, 117, 107);
 }
-
-.nav1 {
-  text-align: center;
-  box-sizing: border-box;
-  padding: 20px 60px 20px 20px;
-}
-.nav2 {
-  text-align: center;
-  box-sizing: border-box;
-  padding: 20px 70px 20px 20px;
-}
-.nav3 {
-  text-align: center;
-  box-sizing: border-box;
-  padding: 20px 100px 20px 20px;
-}
-.nav4 {
-  flex: 1;
-  padding: 20px 100px 20px 210px;
-  font-weight: bolder;
-}
-
-
-
 
 .content1 {
   background: url("img/desk.png");
@@ -72,7 +53,6 @@ a:link {
   font-size: 20px;
 }
 
-
 .myWork {
   padding: 2px;
   text-align: center;
@@ -81,30 +61,22 @@ a:link {
   zoom: 1.1;
 }
 
-
 .competence {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.comp {
+  flex: 25%;
+  padding: 20px;
+  background-color: white;
   text-align: center;
-  padding-bottom: 10px;
 }
-.comp1 {
+.compPic{
+  width: 300px;
+  height: 250px;
   padding: 20px;
 }
-.comp2 {
-  padding: 20px;
-}
-.comp3 {
-  padding: 20px;
-}
-.comp4 {
-  padding: 20px;
-}
-.competence2 {
-  padding-left: 135px;
-  text-align: left;
-  font-weight: bold;
-}
-
-
 .contentAboutme {
   display: flex;
   padding: 10px;
@@ -120,17 +92,13 @@ a:link {
 
   line-height: 1.4;
 }
-.chaslink a:hover{
+.chaslink a:hover {
   color: rgb(53, 117, 107);
 }
-
-
-.myFooter{
-  color: black;
-  background-color: #c1ddd2;
-  font-size: 110%;
-  float: right;
+.profilepic {
+  border-radius: 50%;
 }
+
 .letsConnect {
   text-align: center;
   font-size: x-large;
@@ -139,24 +107,48 @@ a:link {
 .socialMedia {
   text-align: center;
   font-size: 40px;
+  word-spacing: 10px;
 }
-.box {
+
+.myFooter {
   color: black;
   background-color: #c1ddd2;
-  padding: 30px;
-  width: 715px;
-  height: 80px;
+  font-size: 110%;
+  text-align: center;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+.footer1 {
   float: left;
-  text-align: left;
-  font-size: 110%;
+  text-align: center;
 }
-.box2 {
-  color: black;
-  background-color: #c1ddd2;
-  padding: 30px;
-  width: 710px;
-  height: 80px;
+.footer2 {
   float: right;
-  text-align: right;
-  font-size: 110%;
+  text-align: center;
+}
+
+@media (max-width: 992x) {
+  .box {
+    flex: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .competence {
+    flex-direction: column;
+  }
+  .contentAboutme {
+    flex-direction: column;
+  }
+  .contentAboutme1 {
+    flex-direction: column;
+  }
+  .profilepic {
+    flex-direction: column;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
