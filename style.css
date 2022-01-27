@@ -15,6 +15,8 @@ a:link {
   color: black;
 }
 
+
+/* START HEADER */
 .navBar {
   text-align: center;
   padding: 20px;
@@ -31,13 +33,22 @@ a:link {
   background: url("img/desk.png");
   text-align: auto;
   padding: 200px 80px 50px 50px;
+  color: rgb(255, 254, 250);
+  font-weight: bolder;
+  font-size: 50px;
 }
 .cont1 {
   color: rgb(255, 254, 250);
   font-weight: bolder;
-  font-size: 30px;
+  font-size: 50px;
 }
-
+span{
+  opacity: 0;
+transition: all 0.9s ease;
+}
+span.fade{
+ opacity: 1; 
+}
 .content2 {
   background-color: #c1ddd2;
   color: black;
@@ -49,7 +60,10 @@ a:link {
   font-size: 20px;
   padding: 20px;
 }
+/* END HEADER */
 
+
+/* START PORTFOLIO */
 .myWork {
   padding: 2px;
   text-align: center;
@@ -57,7 +71,10 @@ a:link {
 .myWork a:hover {
   zoom: 1.1;
 }
+/* END PORTFOLIO */
 
+
+/* START COMPETENCE */
 .competence {
   display: flex;
   flex-wrap: wrap;
@@ -74,6 +91,11 @@ a:link {
   height: 250px;
   padding: 20px;
 }
+/* END COMPETENCE */
+
+
+
+/* START ABOUT ME */
 .contentAboutme {
   display: flex;
   padding: 10px;
@@ -93,7 +115,10 @@ a:link {
 .profilepic {
   border-radius: 50%;
 }
+/* END ABOUT ME */
 
+
+/* START FOOTER */
 .letsConnect {
   text-align: center;
   font-size: x-large;
@@ -121,6 +146,9 @@ a:link {
   float: right;
   text-align: center;
 }
+/* END FOOTER */
+
+
 
 @media (max-width: 1233px) {
   .competence {
@@ -150,7 +178,7 @@ a:link {
     text-align: center;
   }
   .footer2 {
-    float: right;
+    float: left;
     text-align: center;
   }
   .myFooter {
@@ -167,4 +195,11 @@ a:link {
     font-size: 20px;
     line-height: 1.8;
   }
+  .cont1 {
+    color: rgb(255, 254, 250);
+    font-weight: bolder;
+    font-size: 30px;
+  }
+
+
 }
