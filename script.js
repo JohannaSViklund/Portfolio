@@ -1,33 +1,31 @@
-const text = document.querySelector('.cont1');
-const splitText = 'Johanna Viklund UX-Designer';
-text.textContent = '';
-let totalLength = splitText.length;
-let i;
-for(i = 0; i < totalLength; i++) {
+const text = document.querySelector('.cont1'); //genom att referera ett värde (const1) och komma åt HTML-filen med värdet i (document.) kan jag hämta värdet med (querySelector).
+const splitText = 'Johanna Viklund UX-designer'; //jag vill kunna dela texten (<br>) men ha samma effekter. 
+let totalLength = splitText.length; //endast tillgänglig inom blocket variabeln deklareras i. (splitText är för att dela upp bokstäverna).
+for( let i = 0; i < totalLength; i++) { 
     if(i < 15) {
-        text.innerHTML += '<span>' + splitText[i] + '</span>';
+        text.innerHTML += '<span>' + splitText[i] + '</span>'; //texten som är minre än 15 tecken (Johanna Viklund).//text anger HTML-innehållet för ett element (text.innerHTML).
     }
-    if(i >= 15 && i < 16) {
-        text.innerHTML += '<span><br></span>';
+    if(i >= 15 && i < 16) {  
+        text.innerHTML += '<span><br></span>';//texten som är mer än 15 och mindre än 16 tecken ska vara ett <br>.
     } else if(i >= 16 && i <= totalLength) {
-            text.innerHTML += '<span>' + splitText[i] + '</span>';
+            text.innerHTML += '<span>' + splitText[i] + '</span>';//texten som är över 16 tecken (UX-designer).
     }
 }
 
-let char = 0;
-let timer = setInterval(onTick, 50);
+let char = 0; //endast tillgänglig inom blocket variabeln deklareras i.
+let timer = setInterval(onTick, 50); //varje bokstav visas efter 50 millesekunder. 
 
-function onTick(){
-    const span = text.querySelectorAll('span')[char];
-    span.classList.add('fade');
+function onTick(){ //(funktion) är ett kodblock utformat för att utföra en viss uppgift (effekterna på texten).
+    const span = text.querySelectorAll('span')[char]; //alla span-taggar följer den här regeln.
+    span.classList.add('fade'); //adderar fade-effekt.
     char++
-    if(char === splitText.length){
+    if(char === splitText.length){ //när alla bokstäver har visats ska texten stanna- inte loopa (Johanna Viklund UX-desigener).
         complete();
-        return;
+        return; //return-satsen stoppar exekveringen av en funktion och returnerar ett värde (text utan effekter).
     }
 }
 
-function complete(){
+function complete(){ //(funktion) är ett kodblock utformat för att utföra en viss uppgift (avsluta tidsintervallen- timern).
     clearInterval(timer);
     timer = null;
 }

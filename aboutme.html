@@ -11,10 +11,22 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
   <!--END GOOGLE FONTS-->
-  <script src="https://kit.fontawesome.com/498fce6bb2.js" crossorigin="anonymous"></script>
+ <!--START ICONS-->
+ <script src="https://kit.fontawesome.com/498fce6bb2.js" crossorigin="anonymous"></script>
+ <!--END ICONS-->
 </head>
 <body>
-    <!--START HEADER-->
+<!--START WCAG KRAV FRÅN WEBBRIKTLINJER
+3.1.1 (A) Ange sidans språk i koden
+Riktlinje nr: 141
+Prioritet: 1
+1.4.5 (AA) Använd text, inte bilder, för att visa text 
+
+Riktlinje nr: 128
+Prioritet: 1
+END WCAG KRAV FRÅN WEBBRIKTLINJER-->
+
+   <!--START HEADER - Länkar i a-taggar till navigeringsmenyn högst upp på sidan. Inkluderad Css-->
     <header>
         <div class="navBar">
             <nav>
@@ -25,14 +37,16 @@
             </div>
     </header>
     <!--END HEADER-->
-    <!--START INTRODUCTION-->
+
+     <!--START INTRODUCTION - content1= bakgrundsbild. cont1= mitt namn & titel, inkluderad JavaScript-->
     <section>
         <div class="content1">
              <div class="cont1"></div>
         </div>
     </section>
     <!--END INTRODUCTION-->
-    <!--START SPECIFICATION PAGE-->
+
+    <!--START SPECIFICATION PAGE - Specifisering av vilken sida en befinner sig på, div-taggar med bakrundsfärg mm. inkluderad Css-->
     <section>
         <div class="content2">
             <div class="cont2">Profil</div>
@@ -40,7 +54,9 @@
     </section>
     <!--END SPECIFICATION PAGE-->
     <br/><br/>
-      <!--START ABOUT ME-->
+
+      <!--START ABOUT ME - Beskrivande text om mig & profilbild i div- och p-taggar + 
+        a- och u-tagg för att visa att en del av texten är länkad. Inkluderad Css-->
     <section>
         <div class="contentAboutme">
             <div class="contentAboutme1"><p>Hej!<br/>Johanna heter jag.<br/>
@@ -55,9 +71,10 @@
     </section>
     <!--END ABOUT ME-->
     <br/><br/><br/><br/>
+
      <!--START FOOTER-->
   <footer>
-    <!--START SOCIAL MEDIA & CONTACT-->
+    <!--START SOCIAL MEDIA & CONTACT - p-tag för text över iconer. Länkade iconer från fontawesome till min LinkedIn, GitHub & mejl i a-taggar-->
 <div class="letsConnect">
 <p>Let's connect!</p>
 </div>
@@ -67,12 +84,17 @@
   <a href="mailto:johannaviklund@live.se" target="_blank"><i class="fas fa-envelope-square"></i></a>
 </div>
 <!--END SOCIAL MEDIA & CONTACT-->
+
+<!--START - Namn och mejladress i footern i separata div-taggar för att få de på varsin sida-->
 <div class="myFooter">
     <div class="footer1"">Johanna Viklund</div> 
-    <p class="footer2">johannaviklund@live.se</p> 
+    <div class="footer2">johannaviklund@live.se</div>
  </div>
  </footer>
  <!--END FOOTER-->
- <script src="script.js"></script>
+
+ <!--START - koppling till Js-->
+<script src="script.js"></script>
+<!--END - koppling till Js-->
 </body>
 </html>

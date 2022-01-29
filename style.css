@@ -24,11 +24,9 @@ a:link {
   word-spacing: 80px;
   font-size: 20px;
 }
-
 .navBar a:hover {
   color: rgb(53, 117, 107);
 }
-
 .content1 {
   background: url("img/desk.png");
   text-align: auto;
@@ -79,7 +77,6 @@ span.fade{
   display: flex;
   flex-wrap: wrap;
 }
-
 .comp {
   flex: 25%;
   padding: 20px;
@@ -129,7 +126,6 @@ span.fade{
   font-size: 40px;
   word-spacing: 10px;
 }
-
 .myFooter {
   color: black;
   background-color: #c1ddd2;
@@ -176,6 +172,7 @@ span.fade{
   .footer1 {
     float: left;
     text-align: center;
+    padding-right: 20px;
   }
   .footer2 {
     float: left;
