@@ -168,7 +168,25 @@ span.fade{
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 560px) {
+ 
+  .navBar {
+    text-align: center;
+    padding: 20px;
+    padding-right: 20px;
+    word-spacing: 1000px;
+    font-size: 20px;
+    line-height: 1.8;
+  }
+  .profilepic {
+    padding-top: 10px;
+  }
+
+  .cont1 {
+    color: rgb(255, 254, 250);
+    font-weight: bolder;
+    font-size: 40px;
+  }
   .footer1 {
     float: left;
     text-align: center;
@@ -181,22 +199,47 @@ span.fade{
   .myFooter {
     padding-bottom: 60px;
   }
-  .profilepic {
-    padding-top: 10px;
-  }
+
+}
+
+@media (max-width: 375px) {
+ 
   .navBar {
     text-align: center;
     padding: 20px;
     padding-right: 20px;
-    word-spacing: 1000px;
+    word-spacing: 30px;
     font-size: 20px;
     line-height: 1.8;
   }
+  .content1 {
+    background: url("img/desk.png");
+    text-align: auto;
+    padding: 20px 10px 10px 10px;
+    color: rgb(255, 254, 250);
+    font-weight: bolder;
+    font-size: 50px;
+  }
+  .profilepic {
+    padding-top: 10px;
+  }
+
   .cont1 {
     color: rgb(255, 254, 250);
     font-weight: bolder;
-    font-size: 30px;
+    font-size: 20px;
   }
-
+  .footer1 {
+    float: left;
+    text-align: center;
+    padding-right: 20px;
+  }
+  .footer2 {
+    float: left;
+    text-align: center;
+  }
+  .myFooter {
+    padding-bottom: 60px;
+  }
 
 }
