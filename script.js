@@ -1,6 +1,6 @@
-const text = document.querySelector('.cont1'); //genom att referera ett värde (const1) och komma åt HTML-filen med värdet i (document.) kan jag hämta värdet med (querySelector).
-const splitText = 'Johanna Viklund UX-designer'; //jag vill kunna dela texten (<br>) men ha samma effekter. 
-let totalLength = splitText.length; //endast tillgänglig inom blocket variabeln deklareras i. (splitText är för att dela upp bokstäverna).
+const text = document.querySelector('.cont1'); //genom att referera (const text) till ett värde (cont1) och komma åt HTML-filen med värdet i (document.) kan jag hämta värdet med (querySelector).
+const splitText = 'Johanna Viklund UX-designer'; //(splitText)jag vill kunna dela upp alla bokstäverna var och för sig. 
+let totalLength = splitText.length; //endast tillgänglig inom blocket variabeln deklareras i.
 for( let i = 0; i < totalLength; i++) { 
     if(i < 15) {
         text.innerHTML += '<span>' + splitText[i] + '</span>'; //texten som är minre än 15 tecken (Johanna Viklund).//text anger HTML-innehållet för ett element (text.innerHTML).
@@ -27,6 +27,6 @@ function onTick(){ //(funktion) är ett kodblock utformat för att utföra en vi
 
 function complete(){ //(funktion) är ett kodblock utformat för att utföra en viss uppgift (avsluta tidsintervallen- timern).
     clearInterval(timer);
-    timer = null;
+    timer = null; //inget värde
 }
 
