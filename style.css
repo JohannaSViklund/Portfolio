@@ -77,6 +77,9 @@ span.fade{
   display: flex;
   flex-wrap: wrap;
 }
+.competence a:hover {
+  zoom: 1.1;
+}
 .comp {
   flex: 25%;
   padding: 20px;
@@ -84,10 +87,57 @@ span.fade{
   text-align: center;
 }
 .compPic {
-  width: 300px;
+  border-radius: 50%;
   height: 250px;
-  padding: 20px;
+  width: 250px;
+  padding: 5px;
 }
+
+
+.toList {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin-left: 300px;
+  margin-right: 300px;
+  text-align: left;
+}
+.compList {
+  display: flex;
+  margin-right: 30px;
+  font-size: 20px;
+  line-height: 1.4;
+ align-items: center;
+}
+.kravPic{
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  margin-right: 70px;
+}
+.backroundColor{
+  background-color: rgb(240, 233, 216);
+}
+#jumpKrav{
+  scroll-behavior: smooth;
+}
+
+ul{
+  list-style: none;
+  padding-left: 0;
+}
+li {
+  position: relative;
+  padding-left: 1.5em;
+}
+ul li:before {
+  content: '✓'; 
+  position: absolute;
+  left: 0; 
+  width: 1em;
+  height: 1em;
+ }
+
 /* END COMPETENCE */
 
 
@@ -109,9 +159,7 @@ span.fade{
 .chaslink a:hover {
   color: rgb(53, 117, 107);
 }
-.profilepic {
-  border-radius: 50%;
-}
+
 /* END ABOUT ME */
 
 
@@ -120,11 +168,13 @@ span.fade{
   text-align: center;
   font-size: x-large;
   font-weight: bold;
+  padding-top: 50px;
 }
 .socialMedia {
   text-align: center;
   font-size: 40px;
   word-spacing: 10px;
+  padding-bottom: 30px;
 }
 .myFooter {
   color: black;
